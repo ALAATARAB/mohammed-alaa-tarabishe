@@ -260,6 +260,16 @@ section {
   color: white;
 }
 
+.content a:hover {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* 
+button a:hover {
+  color: white;
+} */
+
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
