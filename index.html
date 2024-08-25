@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Alaa.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Alaa.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Alaa profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohammed Alaa Tarabishe</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Mohammed Alaa Tarabishe.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a target="_blank" href="https:/linkedin.com/in/mohamed-alaa-tarabishe">
+            <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            />
+          </a>
+          <a target="_blank" href="https:/github.com/ALAATARAB">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/cover.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Skill icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year <br />Backend Development <br />Freelance </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Damascus University <br />BSc Degree in Computer Science <br /> 2021 AUG - 2025 AUG (Third Year) </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Experienced back-end developer specializing in Node.js, with expertise in frameworks such as Nest.js and Express.js. I excel at transforming ideas into real-world projects,
+              Solid base in CS fundamentals and problem-solving skill. Creativity and collaboration are among my key strengths,
+              I am adept at adapting to new challenges and committed to continuous learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skill">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                  <h3>Node JS</h3>
+              </article>
+              <article>
+                  <h3>Express JS</h3>
+              </article>
+              <article>
+                  <h3>Nest JS</h3>
+              </article>
+              <article>
+                  <h3>PostgreSQL</h3>
+              </article>
+              <article>
+                  <h3>MongoDb</h3>
+              </article>
+              <article>
+                  <h3>Git/Github</h3>
+              </article>
+              <article>
+                  <h3>TypeORM</h3>
+              </article>
+              <article>
+                  <h3>Sequelize</h3>
+              </article>
+              <article>
+                  <h3>Mongoose</h3>
+              </article>
+              <article>
+                  <h3>JWT, Sessions</h3>
+              </article>
+              <article>
+                  <h3>RESTApi</h3>
+              </article>
+              <article>
+                  <h3>Websocket</h3>
+              </article>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h2 class="skill-sub-title">CS Fundamentals</h2>
+            <div class="article-container">
+              <article>
+                  <h3>OOP</h3>
+              </article>
+              <article>
+                  <h3>Databases</h3>
+              </article>
+              <article>
+                  <h3>OS</h3>
+              </article>
+              <article>
+                  <h3>Design Patterns</h3>
+              </article>
+              <article>
+                  <h3>Networking</h3>
+              </article>
+              <article>
+                  <h3>Math</h3>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skill-sub-title">Problem Solving</h2>
+            <div class="article-container">
+              <article>
+                  <h3><a target="_blank" href="https://codeforces.com/profile/Alaatnt">Specialist on Codeforces</a></h3>
+              </article>
+              <article>
+                  <h3>Solving +800 Problems</h3>
+              </article>
+              <article>
+                  <h3><a target="_blank" href="https://drive.google.com/file/d/1y6KNv1QlQTHB0KYrSzz7q_TZI9Gn4yzU/view">Participant in DCPC</a></h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sep">
+        <img src="./assets/node.png" alt="">
+        <img src="./assets/postgesql.png" alt="">
+        <img src="./assets/nest.png" alt="">
+        <img src="./assets/express.png" alt="">
+        <img src="./assets/database.png" alt="">
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+      <div class="skill-details-container">
+        <div class="skill-containers">
+          <div class="skill-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ajirni.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="content">
+              <h2 class="skill-sub-title project-title">Ajirni.com</h2>
+              <p class="tech">Technologies: Nest.js, PostgreSQL, TypeORM, Typescript</p>
+              <p>Many times, we need a certain item for a specific task, but we don't have that item and we only need it this one time! On the other hand, we often buy things that we rarely use...
+                And that's where the idea came from, We can now link between the owner of the item and the one in need of it. On one hand, the owners can now earn income by renting out their items, and on the other hand, the renter can rent the item without wasting money on purchasing a new one
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:/github.com/ALAATARAB/Ajirni.com'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:/www.linkedin.com/feed/update/urn:li:activity:7187007107991314432/'"
+                >
+                  Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="skill-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nova.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="content">
+
+              <h2 class="skill-sub-title project-title">NOVA Market(API)</h2>
+              <p class="tech">Technologies: Express.js, MongoDb, Mongoose, Morgan</p>
+              <p>NOVA will be your favorite market which will provide for
+                You searching for products by name, category or brand
+                and select the range which you want like price, most sold
+                and most liked, After putting your products in your cart
+                you can apply a coupon ,After selecting the shipping
+                address you can pay in cash or credit card , And also you
+                can review any product with stars and comment.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:/github.com/ALAATARAB/NOVA-Market'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:/www.linkedin.com/feed/update/urn:li:activity:7142946217646325760/'"
+                >
+                  Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="skill-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/chat.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <div class="content">
+              <h2 class="skill-sub-title project-title">ChatMe</h2>
+              <p class="tech">Technologies: Express.js, MongoDb, Mongoose, Websocket</p>
+              <p>Real time messaging app, You can sign up or log in,
+                discover new friends or search for your friends, Block
+                bothering people (and unblock any time you want),
+                knowing the online people and if they are typing to you.
+                </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:/github.com/ALAATARAB/ChatMe'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:/www.linkedin.com/feed/update/urn:li:activity:7126616184677879808/'"
+                >
+                  Demo
+                </button>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a target="_blank" href="mailto:mohamedalaatarab@gmail.com">mohamedalaatarab@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/ln.svg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a target="_blank" href="https://www.linkedin.com/in/mohamed-alaa-tarabishe">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/telegram.jpeg"
+            alt="Telegram icon"
+            class="icon contact-icon"
+          />
+          <p><a target="_blank" href="https://t.me/AlaaTarabishe">Telegram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+        <p>Copyright &#169; Alaa. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
